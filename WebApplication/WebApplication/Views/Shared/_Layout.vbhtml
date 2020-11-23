@@ -68,14 +68,6 @@
     </div>
 
     <h2 class="display-4 text-center py-3 text-primary">Meet the speakers</h2>
-
-    <!-- <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
-        <a href="" class="nav-link active">The next</a>
-        <a href="" class="nav-link">The next</a>
-        <a href="" class="nav-link">The next</a>
-        <a href="" class="nav-link">The next</a>
-    </nav> -->
-
     <footer class="page-footer font-small bg-info py-3">
         <div class="footer-copyright text-center">© 2020 Copyright: 037 - SỞ GD&ĐT TPHCM</div>
     </footer>

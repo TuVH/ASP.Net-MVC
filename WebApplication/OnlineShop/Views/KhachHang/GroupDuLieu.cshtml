@@ -1,0 +1,17 @@
+﻿@using OnlineShop.Models
+@model List<ThanhVien>
+@{
+    ViewBag.Title = "GroupDuLieu";
+}
+
+<h2>GroupDuLieu</h2>
+@*Group dữ liệu*@
+
+@foreach(var grouptv in Model.GroupBy(n => n.LoaiThanhVien))
+{
+    <div>@grouptv.Key.TenLoai</div>
+    foreach (var item in grouptv)
+    {
+        <p>@item.Hoten</p>
+    }
+}
