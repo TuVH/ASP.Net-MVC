@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "SanPham2";
+    Layout = "~/Views/Layout/Online_LayoutPage.cshtml";
+}
+
+<head>
+    <title>Snow Login form Responsive Widget Template : W3Layouts</title>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="~/Content/css1/style.css" type="text/css" media="all">
+</head>
+<body>
+    <!-- login form -->
+    @*tạo 1 div bên ngoài chứa div login*@
+    <input type="button" class="button-click" value="click me" />
+    <div id="popup_login">
+        <section class="w3l-login">
+            <div class="overlay">
+                <div class="wrapper">
+                    <div class="form-section">
+                        <h3>Login</h3>
+                        <h6>To continue with Us</h6>
+                        <form action="#" method="post" class="signin-form">
+                            <div class="form-input">
+                                <input type="text" name="Username" placeholder="Username" required="" autofocus="">
+                            </div>
+                            <div class="form-input">
+                                <input type="password" name="password" placeholder="Password" required="">
+                            </div>
+                            <label class="check-remaind">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <p class="remember">Remember me</p>
+                            </label>
+                            <button type="submit" class="btn btn-primary theme-button mt-4">Log in</button>
+                            <div class="new-signup">
+                                <a href="#reload" class="signuplink">Forgot username or password?</a>
+                            </div>
+                        </form>
+                        <p class="signup">Don’t have account yet? <a href="#signup.html" class="signuplink">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </section>
+    </div>
+    <!-- /login form -->
+</body>
+
+<style>
+    /*Css cho thẻ div bao phủ : popup_login*/
+    #popup_login{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index:99;
+        display:none;
+    }
+</style>
+@*Jquery*@
+<script type="text/javascript">
+    $(".button-click").click(function () {
+        $("#popup_login").slideDown();
+    });
+</script>
+
